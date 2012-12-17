@@ -1,5 +1,5 @@
 # carcajou
-Clojure abstraction library for OpenObject/OpenERP, I wrote to learn Clojure
+Clojure abstraction library for OpenObject/OpenERP I wrote to learn Clojure
 
 ## Usage
 
