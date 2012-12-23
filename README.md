@@ -40,14 +40,13 @@ true
 
 ;;Arbitrary execute
 (execute ResCountry (args "read" 256))
-{:address_format "%(street)s\n%(street2)s\n%(city)s,%(state_code)s %(zip)s\n%(country_name)s", :id 265, :code "TS", :name "The Shire Middle Hearth", :intrastat false}
+{:id 265, :code "TS", :name "The Shire Middle Earth", :intrastat false}
 
 ;;unlink is not yet implemented
 
 ;;All this macros support the instance function
-(execute ResCountry (args "read" 265) (instance (definstance  "6_1_2439.runbot.openerp.com" "6_1_2439_all")))
-{:instance {:uid 1, :protocol http, :database 6_1_2439_all, :port 80, :url 6_1_2439.runbot.openerp.com, :user admin, :password admin}, :args (read 265)}
-
+(execute ResCountry (args "read" 265)
+          (instance (definstance  "6_1_2439.runbot.openerp.com" "6_1_2439_all")))
 ```
 
 ## License
