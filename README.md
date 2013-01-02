@@ -21,18 +21,28 @@ ResCountry Symbol created
 ;;You can read model
 (browse ResCountry)
 
+;;You can specifiy ids
+(browse ResCountry (which 77 78))
+
+
 ;;You can add other option to read
 (browse ResCountry (limit 1) (fields "code", "name") (domain "|" ["code" "=" "CH"] ["code" "=" "FR"]))
 [{:code "FR", :name "France", :id 76}]
-;;(offset 1) (context {}) are also supported
+;;(domain xx) (order code) (offset 1) (limit 10) (context {}) are supported
 
 ;;You can search in the same way
 (search ResCountry (limit 1) (fields "code", "name") (domain ["code" "=" "CH"]))
 [44]
+;;(domain xx) (order code) (offset 1) (limit 10) (context {}) are supported
+
 
 ;;To create an entry
 (create ResCountry (values {"name" "The Shire Middle Hearth", "code" "TS"}))
 265
+
+;;unlink
+(unlink ResCountry (which 77 78))
+true
 
 ;;To write
 (write ResCountry (which 265) (values {"code" "TSHM"}))
@@ -42,12 +52,12 @@ true
 (execute ResCountry (args "read" 256))
 {:id 265, :code "TS", :name "The Shire Middle Earth", :intrastat false}
 
-;;unlink is not yet implemented
-
 ;;All this macros support the instance function
 (execute ResCountry (args "read" 265)
           (instance (definstance  "6_1_2439.runbot.openerp.com" "6_1_2439_all")))
 ```
+
+Next step will be to add (where domain) in write and unlink function
 
 ## License
 
