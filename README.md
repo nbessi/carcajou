@@ -45,7 +45,7 @@ ResCountry Symbol created
 (create ResCountry (values {"name" "The Shire Middle Hearth", "code" "TS"}))
 265
 
-;; unlink
+;; To unlink
 (unlink ResCountry (which 77 78))
 true
 
