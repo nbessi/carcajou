@@ -1,6 +1,13 @@
 # carcajou
 Clojure abstraction library for OpenObject/OpenERP I wrote to learn Clojure
 
+## Getting started
+Simply add carcajou as a dependency to your lein/cake project:
+
+```clojure
+[carcajou "0.2-beta"]
+```
+
 ## Usage
 
 ```clojure
