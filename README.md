@@ -24,7 +24,6 @@ ResCountry Symbol created
 ;;You can specifiy ids
 (browse ResCountry (which 77 78))
 
-
 ;;You can add other option to read
 (browse ResCountry (limit 1) (fields "code", "name") (domain "|" ["code" "=" "CH"] ["code" "=" "FR"]))
 [{:code "FR", :name "France", :id 76}]
@@ -34,7 +33,6 @@ ResCountry Symbol created
 (search ResCountry (limit 1) (fields "code", "name") (domain ["code" "=" "CH"]))
 [44]
 ;;(domain xx) (order code) (offset 1) (limit 10) (context {}) are supported
-
 
 ;;To create an entry
 (create ResCountry (values {"name" "The Shire Middle Hearth", "code" "TS"}))
