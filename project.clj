@@ -1,4 +1,4 @@
-(defproject carcajou "0.2-beta"
+(defproject org.clojars.nbessi/carcajou "0.2-beta"
   :description "Clojure abstraction for OpenObject/OpenERP"
   :url "http://example.com/FIXME"
   :license {:name "MIT License"
