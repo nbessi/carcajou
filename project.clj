@@ -1,6 +1,6 @@
 (defproject org.clojars.nbessi/carcajou "0.2-beta"
   :description "Clojure abstraction for OpenObject/OpenERP"
-  :url "http://example.com/FIXME"
+  :url "https://github.com/nbessi/carcajou"
   :license {:name "MIT License"
             :url "http://opensource.org/licenses/mit-license.php"}
   :dependencies [[org.clojure/clojure "1.4.0"]
