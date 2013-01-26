@@ -177,14 +177,12 @@
 (defmacro write
   "Write an entry for given model (which [ids]) is mandatory"
   [ent & body]
-  ;;call default_get???
   `(let [dataset# (-> (create_dataset (get_active_instance)) ~@body)]
      (write* ~ent dataset#)))
 
 (defmacro unlink
   "Remove an entry for given model (which [ids]) is mandatory"
   [ent & body]
-  ;;call default_get???
   `(let [dataset# (-> (create_dataset (get_active_instance)) ~@body)]
      (unlink* ~ent dataset#)))
 
